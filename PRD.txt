@@ -1,0 +1,9 @@
+Create a app with the following requirements:
+1. Run on Mac OS
+2. When it runs, it’s running in the background.
+3. It listens to a shortcut key to Shift+Command+P to trigger an action. The shortcut key should works globally, no matter where I am. 
+4. When the shortcut key is pressed, it will prompt a system notification that says “hello world”.
+5. The app should not require me to give Accessibility permissions to Terminal
+
+Make sure the app is fully tested, and could run perfectly. 
+Provide me with comprehensive instruction to run the app.
