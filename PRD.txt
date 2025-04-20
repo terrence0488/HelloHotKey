@@ -1,9 +1,43 @@
-Create a app with the following requirements:
-1. Run on Mac OS
-2. When it runs, it’s running in the background.
-3. It listens to a shortcut key to Shift+Command+P to trigger an action. The shortcut key should works globally, no matter where I am. 
-4. When the shortcut key is pressed, it will prompt a system notification that says “hello world”.
-5. The app should not require me to give Accessibility permissions to Terminal
+Create a macOS app with these requirements:
 
-Make sure the app is fully tested, and could run perfectly. 
-Provide me with comprehensive instruction to run the app.
+General:
+- Platform: macOS (latest version compatible)
+- Developed as a native macOS application using Swift
+- Runs silently in background when launched.
+
+Menu Bar Icon:
+- Displays icon in macOS menu bar.
+- Dropdown menu includes:
+  - Single-choice options: Prompt A, Prompt B, Prompt C
+  - Setting option to open settings
+  - Quit option to fully terminate the app
+
+Global Shortcut:
+- Shortcut: Shift + Command + P
+- Works globally across any active app
+
+Shortcut Action:
+- Captures currently selected text
+- Checks selected prompt (Prompt A, B, or C)
+- Sends selected text and prompt tone to OpenAI API
+- Receives reformatted text from OpenAI API
+- Automatically replaces original selected text with reformatted text
+
+Settings Interface:
+- Accessible via menu bar "Setting" option
+- Allows users to define/edit custom prompts for Prompt A, B, C
+- Prompts saved persistently between app sessions
+
+Quit Action:
+- "Quit" fully exits the app and terminates background processes
+
+Permissions:
+- App must function without requiring Accessibility permissions for Terminal
+
+Additional:
+- Ensure thorough testing for reliability and functionality across apps
+- Provide clear instructions for:
+  - Dependency installation
+  - Running and compiling
+  - Configuring OpenAI API keys
+  - Packaging for macOS distribution
